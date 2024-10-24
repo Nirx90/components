@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box{
+    width: 90%;
+    height: 30rem;
+    background-color: rgb(206, 127, 127);
+}
+
+li{
+    list-style-type: none;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 3rem 3rem;
+    /* padding: 20px 10px; */
+    overflow: hidden;
+}
+
+.card-wrapper .swiper-pagination{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: white;
+    opacity: 1;
+    border: 1px solid gray;
+    border-radius: 25%;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+    /* border: 2px solid black; */
+    border: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: Blue;
+}
+
+.arrow{
+    display: none;
+}
+
+@media (max-width:768px){
+    .arrow{
+        display: flex;
+    }
+}
